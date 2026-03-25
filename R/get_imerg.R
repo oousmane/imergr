@@ -46,6 +46,9 @@
 #' r <- terra::rast(nc)
 #' terra::plot(r)
 #' }
+#'
+#' @export
+#'
 fetch_imerg <- function(url, out_dir = "data", format = "netcdf") {
   format <- match.arg(format, c("netcdf", "geotiff"))
   dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
@@ -170,6 +173,7 @@ fetch_imerg <- function(url, out_dir = "data", format = "netcdf") {
 #' })
 #' }
 #'
+#'  @export
 get_imerg <- function(date, hour, min,
                       run     = "late",
                       version = "V07B",

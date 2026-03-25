@@ -99,6 +99,7 @@ purrr::walk(dates, \(date) {
 })
 }
 
+ @export
 }
 \seealso{
 [fetch_imerg()] for the low-level interface,

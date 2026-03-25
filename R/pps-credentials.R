@@ -24,6 +24,7 @@
 #' set_pps_key("your@email.com")
 #' }
 #'
+#' @export
 set_pps_key <- function(email) {
   if (!grepl("^[^@]+@[^@]+\\.[^@]+$", email))
     stop("Invalid email address: ", email)
@@ -69,6 +70,8 @@ set_pps_key <- function(email) {
 #' \dontrun{
 #' get_pps_key()
 #' }
+#' @export
+#'
 get_pps_key <- function(silent = FALSE) {
   email <- Sys.getenv("PPS_EMAIL")
 

@@ -54,6 +54,7 @@ tif <- fetch_imerg(url, out_dir = "data/imerg", format = "geotiff")
 r <- terra::rast(nc)
 terra::plot(r)
 }
+
 }
 \seealso{
 [get_imerg()] for the preferred high-level interface,
