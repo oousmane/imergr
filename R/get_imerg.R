@@ -173,7 +173,7 @@ fetch_imerg <- function(url, out_dir = "data", format = "netcdf") {
 #' })
 #' }
 #'
-#'  @export
+#' @export
 get_imerg <- function(date, hour, min,
                       run     = "late",
                       version = "V07B",
