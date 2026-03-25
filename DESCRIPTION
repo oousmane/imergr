@@ -1,0 +1,34 @@
+Package: imergr
+Type: Package
+Title: Download and Process NASA GPM IMERG Half-Hourly Precipitation Data
+Version: 0.0.900
+Authors@R: c(
+    person(
+      "Ousmane", "Ouedraogo",
+      email = "oousmane@proton.me",
+      role = c("aut", "cre")
+    )
+  )
+Description: Provides tools to download NASA GPM IMERG (Integrated
+    Multi-satellitE Retrievals for GPM) half-hourly precipitation data
+    from the NASA Precipitation Processing System (PPS) GIS server
+    <https://jsimpsonhttps.pps.eosdis.nasa.gov>. Supports Early and Late
+    run products (V07B), converts GeoTIFF outputs to CF-1.7 compliant
+    NetCDF files, and provides utilities for credential management and
+    batch downloading.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+URL: https://github.com/oousmane/imergr
+BugReports: https://github.com/oousmane/imergr/issues
+Suggests:
+    dplyr,
+    purrr,
+    withr
+Imports:
+    lubridate,
+    ncdf4,
+    terra,
+    utils
+SystemRequirements: curl (>= 7.0)
+RoxygenNote: 7.3.3
